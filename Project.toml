@@ -1,0 +1,29 @@
+name = "PPBA"
+uuid = "025dace5-7eb0-4486-b5e5-245612781ff7"
+authors = ["Christopher Marcotte <christopher.marcotte+git@gmail.com>"]
+version = "0.1.0"
+
+[deps]
+ApproxFun = "28f2ccd6-bb30-5033-b560-165f7b14dc2f"
+ApproxFunBase = "fbd15aa5-315a-5a7d-a8a4-24992e37be05"
+ApproxFunOrthogonalPolynomials = "b70543e2-c0d9-56b8-a290-0d4d6d4de211"
+DomainSets = "5b8099bc-c8ec-5219-889f-1d9e522a28bf"
+
+[weakdeps]
+GLMakie = "e9467ef8-e4e7-5192-8a1a-b1aee30e663a"
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[extensions]
+
+[compat]
+ApproxFun = "0.13.28"
+Test = "1.11.0"
+
+[extras]
+ApproxFunBase = "fbd15aa5-315a-5a7d-a8a4-24992e37be05"
+ApproxFunOrthogonalPolynomials = "b70543e2-c0d9-56b8-a290-0d4d6d4de211"
+DomainSets = "5b8099bc-c8ec-5219-889f-1d9e522a28bf"
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test", "ApproxFunBase", "ApproxFunOrthogonalPolynomials", "DomainSets"]
